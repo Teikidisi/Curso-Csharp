@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegados", "Delegados\Delegados.csproj", "{C89AEF57-83BD-4B13-A4CD-D439D7D4D364}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegados", "Delegados\Delegados.csproj", "{C89AEF57-83BD-4B13-A4CD-D439D7D4D364}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Predicates", "Predicates\Predicates.csproj", "{7E6D6DF8-7C6A-40A5-A1E0-1660B78C6608}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Predicates", "Predicates\Predicates.csproj", "{7E6D6DF8-7C6A-40A5-A1E0-1660B78C6608}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PredicateClasses", "PredicateClasses\PredicateClasses.csproj", "{AE9F3E7F-2828-4F88-8F24-A2BBE6092F07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PredicateClasses", "PredicateClasses\PredicateClasses.csproj", "{AE9F3E7F-2828-4F88-8F24-A2BBE6092F07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PredicateApplication", "PredicateApplication\PredicateApplication.csproj", "{8C6575C0-5C6E-49EE-B1BB-03BC8A8DB8B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PredicateApplication", "PredicateApplication\PredicateApplication.csproj", "{8C6575C0-5C6E-49EE-B1BB-03BC8A8DB8B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaExpressions", "LambdaExpressions\LambdaExpressions.csproj", "{2C712A51-E9B1-45B3-9AAD-FF306EF6C010}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaGeometria", "LambdaGeometria\LambdaGeometria.csproj", "{3029B739-A5B1-4911-8FA0-CCAC084C81A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{8C6575C0-5C6E-49EE-B1BB-03BC8A8DB8B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C6575C0-5C6E-49EE-B1BB-03BC8A8DB8B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C6575C0-5C6E-49EE-B1BB-03BC8A8DB8B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C712A51-E9B1-45B3-9AAD-FF306EF6C010}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C712A51-E9B1-45B3-9AAD-FF306EF6C010}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C712A51-E9B1-45B3-9AAD-FF306EF6C010}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C712A51-E9B1-45B3-9AAD-FF306EF6C010}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3029B739-A5B1-4911-8FA0-CCAC084C81A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3029B739-A5B1-4911-8FA0-CCAC084C81A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3029B739-A5B1-4911-8FA0-CCAC084C81A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3029B739-A5B1-4911-8FA0-CCAC084C81A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

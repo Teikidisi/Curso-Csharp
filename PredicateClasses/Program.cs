@@ -82,3 +82,13 @@ class User
 {
     public static string Input { get; set; }
 }
+
+class LambdaExpression
+{
+    private static List<int> list = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8 ,9 };
+
+    public static List<int> GetPairs()
+    {
+        return list.FindAll(x => x % 2 == 0);
+    }
+}
