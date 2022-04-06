@@ -7,7 +7,7 @@ while(Console.ReadKey().Key != ConsoleKey.Enter)
 
 }
 var tiempoTotal = await Preguntados.ExamenGeneral();
-
+Console.WriteLine($"El tiempo transcurrido fue {tiempoTotal / 1000m}");
 
 public class Preguntados
 {
