@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asincrono", "Asincrono\Asin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reminder", "Reminder\Reminder.csproj", "{95FE2F5E-FBE9-48F0-8E20-C293294D8758}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParalelismoExamen", "ParalelismoExamen\ParalelismoExamen.csproj", "{0BCF41DD-1B34-41A7-B9F9-BC487C4EA50C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{95FE2F5E-FBE9-48F0-8E20-C293294D8758}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95FE2F5E-FBE9-48F0-8E20-C293294D8758}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95FE2F5E-FBE9-48F0-8E20-C293294D8758}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BCF41DD-1B34-41A7-B9F9-BC487C4EA50C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BCF41DD-1B34-41A7-B9F9-BC487C4EA50C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BCF41DD-1B34-41A7-B9F9-BC487C4EA50C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BCF41DD-1B34-41A7-B9F9-BC487C4EA50C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
