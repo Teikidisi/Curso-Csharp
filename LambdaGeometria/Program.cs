@@ -52,13 +52,10 @@ while (ciclo)
     Console.WriteLine("\n¿Hacer otro calculo? Presione enter.");
     while(Console.ReadKey().Key != ConsoleKey.Enter)
     {
-    //if (figura.ToLower() == "f")
-    //{
-    //   ciclo = false;
-    //}
     }
     Console.WriteLine("------------------------------------------------------");
 }
+
 
 public class GeometriaDelegate
 {
