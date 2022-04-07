@@ -61,7 +61,7 @@ public class Preguntados
     public static async Task Tiempo()
     {
         await Task.Run(() => {
-            Thread.Sleep(15000);
+            Thread.Sleep(2000);
             Console.WriteLine("-----------------------------------\nSe acabó el tiempo");
     });
     }
