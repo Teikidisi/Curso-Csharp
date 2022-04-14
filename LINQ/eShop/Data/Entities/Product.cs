@@ -10,7 +10,7 @@ namespace Data.Entities
     {
         public int Id { get; private set; }
         public string Name { get; private set; }
-        public int Stock { get; private set; }
+        public int Stock { get;  set; }
         public decimal Price { get; private set; }
         public string Sku { get; private set; }
         public string Description { get; private set; }
