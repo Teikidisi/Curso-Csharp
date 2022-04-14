@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32319.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQTutorial", "LINQTutorial\LINQTutorial.csproj", "{4FB596F7-719A-4248-AF0C-61D89C06B4F4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "linq2", "linq2\linq2.csproj", "{63B31CA9-1F15-4AE9-83F6-CC3B33585599}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQExercise", "LINQExercise\LINQExercise.csproj", "{63D64022-9040-4564-BC5E-D991BCBF7136}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "linqMethodSamples", "linqMethodSamples\linqMethodSamples.csproj", "{10AC7944-B5DB-400E-8807-045DB52523D6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQExercise2", "LINQExercise2\LINQExercise2.csproj", "{77D87153-5713-4C0E-9F43-1A5CEC0BC938}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQProductList", "LINQProductList\LINQProductList.csproj", "{F44448F6-D20C-448F-9A5E-BC16AB19F797}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FB596F7-719A-4248-AF0C-61D89C06B4F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FB596F7-719A-4248-AF0C-61D89C06B4F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FB596F7-719A-4248-AF0C-61D89C06B4F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FB596F7-719A-4248-AF0C-61D89C06B4F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63B31CA9-1F15-4AE9-83F6-CC3B33585599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63B31CA9-1F15-4AE9-83F6-CC3B33585599}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63B31CA9-1F15-4AE9-83F6-CC3B33585599}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63B31CA9-1F15-4AE9-83F6-CC3B33585599}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63D64022-9040-4564-BC5E-D991BCBF7136}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63D64022-9040-4564-BC5E-D991BCBF7136}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63D64022-9040-4564-BC5E-D991BCBF7136}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63D64022-9040-4564-BC5E-D991BCBF7136}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10AC7944-B5DB-400E-8807-045DB52523D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10AC7944-B5DB-400E-8807-045DB52523D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10AC7944-B5DB-400E-8807-045DB52523D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10AC7944-B5DB-400E-8807-045DB52523D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77D87153-5713-4C0E-9F43-1A5CEC0BC938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77D87153-5713-4C0E-9F43-1A5CEC0BC938}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77D87153-5713-4C0E-9F43-1A5CEC0BC938}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77D87153-5713-4C0E-9F43-1A5CEC0BC938}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F44448F6-D20C-448F-9A5E-BC16AB19F797}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F44448F6-D20C-448F-9A5E-BC16AB19F797}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F44448F6-D20C-448F-9A5E-BC16AB19F797}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F44448F6-D20C-448F-9A5E-BC16AB19F797}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81E62601-B66E-4989-840E-2C4B0B2BC201}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,15 @@
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\linqMethodSamples\bin\Debug\net6.0\linqMethodSamples.exe
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\linqMethodSamples\bin\Debug\net6.0\linqMethodSamples.deps.json
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\linqMethodSamples\bin\Debug\net6.0\linqMethodSamples.runtimeconfig.json
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\linqMethodSamples\bin\Debug\net6.0\linqMethodSamples.dll
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\linqMethodSamples\bin\Debug\net6.0\linqMethodSamples.pdb
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\linqMethodSamples\obj\Debug\net6.0\linqMethodSamples.csproj.AssemblyReference.cache
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\linqMethodSamples\obj\Debug\net6.0\linqMethodSamples.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\linqMethodSamples\obj\Debug\net6.0\linqMethodSamples.AssemblyInfoInputs.cache
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\linqMethodSamples\obj\Debug\net6.0\linqMethodSamples.AssemblyInfo.cs
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\linqMethodSamples\obj\Debug\net6.0\linqMethodSamples.csproj.CoreCompileInputs.cache
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\linqMethodSamples\obj\Debug\net6.0\linqMethodSamples.dll
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\linqMethodSamples\obj\Debug\net6.0\refint\linqMethodSamples.dll
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\linqMethodSamples\obj\Debug\net6.0\linqMethodSamples.pdb
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\linqMethodSamples\obj\Debug\net6.0\linqMethodSamples.genruntimeconfig.cache
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\linqMethodSamples\obj\Debug\net6.0\ref\linqMethodSamples.dll

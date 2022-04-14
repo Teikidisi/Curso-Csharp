@@ -1,0 +1,15 @@
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQExercise2\bin\Debug\net6.0\LINQExercise2.exe
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQExercise2\bin\Debug\net6.0\LINQExercise2.deps.json
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQExercise2\bin\Debug\net6.0\LINQExercise2.runtimeconfig.json
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQExercise2\bin\Debug\net6.0\LINQExercise2.dll
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQExercise2\bin\Debug\net6.0\LINQExercise2.pdb
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQExercise2\obj\Debug\net6.0\LINQExercise2.csproj.AssemblyReference.cache
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQExercise2\obj\Debug\net6.0\LINQExercise2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQExercise2\obj\Debug\net6.0\LINQExercise2.AssemblyInfoInputs.cache
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQExercise2\obj\Debug\net6.0\LINQExercise2.AssemblyInfo.cs
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQExercise2\obj\Debug\net6.0\LINQExercise2.csproj.CoreCompileInputs.cache
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQExercise2\obj\Debug\net6.0\LINQExercise2.dll
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQExercise2\obj\Debug\net6.0\refint\LINQExercise2.dll
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQExercise2\obj\Debug\net6.0\LINQExercise2.pdb
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQExercise2\obj\Debug\net6.0\LINQExercise2.genruntimeconfig.cache
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQExercise2\obj\Debug\net6.0\ref\LINQExercise2.dll

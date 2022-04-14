@@ -1,0 +1,15 @@
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQProductList\bin\Debug\net6.0\LINQProductList.exe
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQProductList\bin\Debug\net6.0\LINQProductList.deps.json
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQProductList\bin\Debug\net6.0\LINQProductList.runtimeconfig.json
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQProductList\bin\Debug\net6.0\LINQProductList.dll
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQProductList\bin\Debug\net6.0\LINQProductList.pdb
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQProductList\obj\Debug\net6.0\LINQProductList.csproj.AssemblyReference.cache
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQProductList\obj\Debug\net6.0\LINQProductList.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQProductList\obj\Debug\net6.0\LINQProductList.AssemblyInfoInputs.cache
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQProductList\obj\Debug\net6.0\LINQProductList.AssemblyInfo.cs
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQProductList\obj\Debug\net6.0\LINQProductList.csproj.CoreCompileInputs.cache
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQProductList\obj\Debug\net6.0\LINQProductList.dll
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQProductList\obj\Debug\net6.0\refint\LINQProductList.dll
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQProductList\obj\Debug\net6.0\LINQProductList.pdb
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQProductList\obj\Debug\net6.0\LINQProductList.genruntimeconfig.cache
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\LINQTutorial\LINQProductList\obj\Debug\net6.0\ref\LINQProductList.dll
