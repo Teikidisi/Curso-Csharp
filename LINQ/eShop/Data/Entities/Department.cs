@@ -10,9 +10,10 @@ namespace Data.Entities
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public List<Subdepartment> Subdepartments { get; set; }
+        public virtual ICollection<Subdepartment> Subdepartments { get; set; }
 
-        public Department(string name, List<Subdepartment> subdepartments)
+        public Department() { }
+        public Department(string name, ICollection<Subdepartment> subdepartments)
         {
             if (string.IsNullOrEmpty(name))
                 throw new ArgumentNullException("El nombre no puede estar vacío.");

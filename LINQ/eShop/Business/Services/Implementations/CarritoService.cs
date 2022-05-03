@@ -1,16 +1,19 @@
 ﻿using Business.Services.Abstractions;
+using Data.DataApp;
 using Data.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Business.Services.Implementations
 {
     public class CarritoService :ICarritoService
     {
         List<Carrito> _carritoList = new List<Carrito>();
+
+        private readonly AppDbContext _context;
+        public CarritoService(AppDbContext context)
+        {
+            _context = context;
+        }
+
         public void AddPurchaseCarrito(Carrito productCarrito)
         {
             _carritoList.Add(productCarrito);

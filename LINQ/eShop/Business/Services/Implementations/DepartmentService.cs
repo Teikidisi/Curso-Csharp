@@ -1,16 +1,19 @@
 ﻿using Business.Services.Abstractions;
+using Data.DataApp;
 using Data.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Business.Services.Implementations
 {
     public class DepartmentService : IDepartmentService
     {
         private List<Department> DepartmentList = TestData.DepartmentList;
+
+        private readonly AppDbContext _context;
+        public DepartmentService(AppDbContext context)
+        {
+            _context = context;
+        }
 
         public List<Department> GetDepartments()
         {
@@ -22,7 +25,7 @@ namespace Business.Services.Implementations
             var department = DepartmentList.FirstOrDefault(c => c.Name == name);
 
             if (department != null)
-                return department.Subdepartments;
+                return (List<Subdepartment>)department.Subdepartments;
 
             return new List<Subdepartment>();
         }

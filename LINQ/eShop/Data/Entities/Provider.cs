@@ -15,6 +15,7 @@ namespace Data.Entities
         public string EmailAddress { get; private set; }
         public string City { get;  private set; }
 
+        public Provider() { }
         public Provider(int id, string name, string emailaddress)
         {
             if (string.IsNullOrEmpty(name))

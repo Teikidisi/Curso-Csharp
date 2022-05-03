@@ -1,18 +1,22 @@
 ﻿using Business.Models;
 using Business.Services.Abstractions;
+using Data.DataApp;
 using Data.Entities;
 using Data.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Business.Services.Implementations
 {
     public class PurchaseOrderService : IPurchaseOrderService
     {
         private List<PurchaseOrder> _purchaseOrders = new List<PurchaseOrder>();
+
+        private readonly AppDbContext _context;
+        public PurchaseOrderService(AppDbContext context)
+        {
+            _context = context;
+        }
+
         public void AddPurchaseOrder(PurchaseOrder purchaseOrder) => _purchaseOrders.Add(purchaseOrder);
         public List<PurchaseOrder> GetPurchaseOrders() => _purchaseOrders;
 

@@ -50,7 +50,7 @@ namespace Business.Services.Implementations
                 .Select(c => new ProductReportDTODepa
                 {
                     Depa = c.Name,
-                    Subdepas = c.Subdepartments
+                    Subdepas = (List<Subdepartment>)c.Subdepartments
                 }).ToList();
             //foreach(var depa in AgrupacionQuery)
             //{

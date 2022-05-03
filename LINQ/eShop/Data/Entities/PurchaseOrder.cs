@@ -9,14 +9,18 @@ namespace Data.Entities
 {
     public class PurchaseOrder
     {
-        public decimal Total { get; private set; }
-        public DateTime PurchaseDate { get; private set; } = DateTime.Now; //declarar un valor default
-        public Provider Provider { get; private set; }
-        public List<Product> PurchasedProducts { get; private set; }
-        public PurchaseOrderStatus Status { get; private set; }
+        public decimal Total { get;  set; }
+        public DateTime PurchaseDate { get;  set; } = DateTime.Now; //declarar un valor default
+        public int ProviderID { get; set; }
+        public virtual Provider Provider { get;  set; }
+        public virtual List<Product> PurchasedProducts { get; set; }
+        public PurchaseOrderStatus Status { get;  set; }
+        public virtual ICollection<ProductosAComprar> ProductosAComprars { get; set; }
         public int Id { get;private set; }
 
         private static int consecutiveNumber = 1;
+
+        public PurchaseOrder() { }
         public PurchaseOrder( Provider provider, List<Product> purchasedProducts, DateTime? purchaseDate = null)
         {
             

@@ -8,14 +8,18 @@ namespace Data.Entities
 {
     public class Product
     {
-        public int Id { get; private set; }
-        public string Name { get; private set; }
+        public int Id { get;  set; }
+        public int SubdepartmentID { get; set; }
+        public string Name { get;  set; }
         public int Stock { get;  set; }
-        public decimal Price { get; private set; }
-        public string Sku { get; private set; }
-        public string Description { get; private set; }
+        public decimal Price { get;  set; }
+        public string Sku { get;  set; }
+        public string Description { get;  set; }
         public string Brand { get; private set; }
-        public Subdepartment Subdepartment { get; set; }
+        public virtual Subdepartment Subdepartment { get; set; }
+        public virtual ICollection<Carrito> Carritos { get; set; }
+        public virtual ICollection<ProductosAComprar> ProductosAComprars { get; set; }
+        public Product() { }
 
         public Product(string name, decimal price, string description, string brand, int id, string sku, int stock = 1 )
         {

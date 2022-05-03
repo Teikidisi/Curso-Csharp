@@ -8,133 +8,133 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MVCMovies
 build_property.RootNamespace = MVCMovies
-build_property.ProjectDir = C:\Users\Rodrigo\Source\Repos\Teikidisi\Curso-Csharp\EF\MVCMovies\MVCMovies\
+build_property.ProjectDir = C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\EF\MVCMovies\MVCMovies\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Rodrigo\Source\Repos\Teikidisi\Curso-Csharp\EF\MVCMovies\MVCMovies
+build_property.MSBuildProjectDirectory = C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\EF\MVCMovies\MVCMovies
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Areas/Admin/Views/Home/Index.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Areas/Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Pages/ActorDetails.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Pages/ActorDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN0b3JEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Pages/Articles/Articles.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Pages/Articles/Articles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXJ0aWNsZXNcQXJ0aWNsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Pages/Articles/New.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Pages/Articles/New.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXJ0aWNsZXNcTmV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Pages/Contact.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Pages/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Pages/ContactConfirmation.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Pages/ContactConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Pages/Index.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Pages/_ViewImports.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Pages/_ViewStart.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Account/Login.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Account/Register.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Actors/Create.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Actors/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0b3JzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Actors/Delete.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Actors/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0b3JzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Actors/Edit.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Actors/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0b3JzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Actors/Index.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Actors/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0b3JzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/HelloWorld/Hello.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/HelloWorld/Hello.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9Xb3JsZFxIZWxsby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/HelloWorld/Index.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/HelloWorld/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9Xb3JsZFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/HelloWorld/WelcomeAgain.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/HelloWorld/WelcomeAgain.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9Xb3JsZFxXZWxjb21lQWdhaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Home/Index.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Home/Privacy.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Movies/Create.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Movies/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Movies/Delete.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Movies/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Movies/Details.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Movies/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Movies/Edit.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Movies/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Movies/Index.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Movies/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Shared/Error.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Shared/MyPartialView.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Shared/MyPartialView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE15UGFydGlhbFZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/_ViewImports.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/_ViewStart.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Rodrigo/Source/Repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Shared/_Layout.cshtml]
+[C:/Users/Rodrigo/source/repos/Teikidisi/Curso-Csharp/EF/MVCMovies/MVCMovies/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-vwbjx8zvq6

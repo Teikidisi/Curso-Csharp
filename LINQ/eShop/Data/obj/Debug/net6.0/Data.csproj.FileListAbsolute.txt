@@ -10,3 +10,5 @@ C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\eShop\Data\obj\Debug\n
 C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\eShop\Data\obj\Debug\net6.0\refint\Data.dll
 C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\eShop\Data\obj\Debug\net6.0\Data.pdb
 C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\eShop\Data\obj\Debug\net6.0\ref\Data.dll
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\eShop\Data\bin\Debug\net6.0\Data.runtimeconfig.json
+C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\LINQ\eShop\Data\obj\Debug\net6.0\Data.genruntimeconfig.cache

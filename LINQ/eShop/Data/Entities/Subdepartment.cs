@@ -8,10 +8,13 @@ namespace Data.Entities
 {
     public class Subdepartment
     {
+        public int Id { get; set; }
         public string Name { get; set; }
-        public List<Product> Products { get; set; } = new List<Product>(); //o escribir new(); C#-10
-        public Department Department { get; set; }
+        public virtual ICollection<Product> Products { get; set; } = new List<Product>(); //o escribir new(); C#-10
+        public virtual Department Department { get; set; }
+        public int DepartmentID { get; set; }
 
+        public Subdepartment() { }
         public Subdepartment(string name)
         {
             if (string.IsNullOrEmpty(name))

@@ -1,10 +1,7 @@
 ﻿using Business.Services.Abstractions;
+using Data.DataApp;
 using Data.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Business.Services.Implementations
 {
@@ -12,6 +9,14 @@ namespace Business.Services.Implementations
     {
 
         private List<Product> ProductList = TestData.ProductList;
+
+        private readonly AppDbContext _context;
+        public ProductService(AppDbContext context)
+        {
+            _context = context;
+        }
+
+
         public void AddProduct(Product product)
         {
             ProductList.Add(product);
