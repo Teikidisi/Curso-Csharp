@@ -1,0 +1,60 @@
+﻿@page
+@model MVCMovies.Areas.Articles.NewModel
+@{
+}
+
+<div id="alert"></div>
+<form method="post" action ="/articles" id="myForm">
+    <div class="mb-3">
+        <label for="title">Title</label>
+        <input type="text" id = "title" name="title" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label for="source">Source</label>
+        <input type="text" id = "source" name="source" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label for="category">Category</label>
+        <input type="text" id = "category" name="category" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label for="body">Body</label>
+        <textarea type="text" id = "body" name="body" class="form-control" placeholder="Write here..."></textarea>
+    </div>
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Save</button>
+    </div>
+</form>
+
+@section Scripts{
+    <script>
+        $('form').submit(function(ev){
+            ev.preventDefault();
+            $.ajax({
+                type: 'POST',
+                url: '/articles',
+                data: JSON.stringify(convertFormToJSON($('#myForm'))),
+                dataType: 'json', 
+                contentType: 'application/json',
+                success: function (data){
+                    console.log(data);
+                    $('#alert').text('El formulario se envió correctamente');
+                },
+                error: function(data){
+                    console.log(data);
+                    alert('Ocurrió un error inesperado');
+                },
+            });
+        });
+
+        function convertFormToJSON(form) {
+          const array = $(form).serializeArray(); // Encodes the set of form elements as an array of names and values.
+          const json = {};
+          $.each(array, function () {
+            json[this.name] = this.value || "";
+          });
+          return json;
+        }
+
+    </script>
+}

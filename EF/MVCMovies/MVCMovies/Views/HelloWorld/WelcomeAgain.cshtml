@@ -1,0 +1,18 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h3>Name: @ViewData["Name"]</h3>
+<h5>ID : @ViewData["id"]</h5>
+<h3>Este bucle se hizo con el poder de C#!!</h3>
+@for(int i = 0; i < (int)ViewData["id"]; i++){
+    <div>@ViewData["Name"]</div>
+}
+
+@if ((bool)ViewData["IsRed"]){
+    <div class="text-danger">Es rojo</div>
+} else{
+    <div class="text-primary">Es otro color</div>
+}

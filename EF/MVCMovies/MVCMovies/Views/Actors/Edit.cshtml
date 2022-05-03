@@ -1,0 +1,51 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model ActorToMovies
+<h1>Edit Actor</h1>
+<form method="post" asp-action="Edit" asp-antiforgery="true">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class = "mb-3">
+        <label asp-for="Name">Name</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class = "mb-3">
+        <label asp-for="DateOfBirth">Date of Birth</label>
+        <input asp-for="DateOfBirth" class = "form-control" />
+        <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+    </div>
+    <div class = "mb-3">
+        <label asp-for="OscarsWon">Oscars Won</label>
+        <input asp-for="OscarsWon" class = "form-control" />
+        <span asp-validation-for="OscarsWon" class="text-danger"></span>
+    </div>
+    <div>
+        <label>Staring:</label><br />
+            @foreach(var movie in Model.Movies)
+            {
+                <div class="form-check">
+                    @*<input type="checkbox" class="form-check-input" name="Appearances" value="@movie.Id" @if(Model.Appearances.Contains(movie.Id)){<text>checked</text>} />*@
+                    <label class="form-check-label">@movie.Title</label>
+                </div>
+            }
+    </div>
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    @if (ViewData["Response"] != null)
+    {
+        <div class = "mb-3">
+            <div class="alert alert-success">
+                @ViewData["Response"]
+            </div>
+        </div>
+    }
+</form>
+
+@section Scripts{
+    @await Html.PartialAsync("_ValidationScriptsPartial");
+}

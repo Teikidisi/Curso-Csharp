@@ -1,0 +1,47 @@
+﻿@page
+@model MVCMovies.Pages.Articles.ArticlesModel
+@{
+}
+
+<div class="d-flex align-items-end">
+    <h1 class="flex-grow-1">Articles</h1>
+    <div>
+        <a href="~/articles/new" class="btn btn-primary">Create</a>
+    </div>
+</div>
+
+<div id="articlesContainer" >
+
+</div>
+
+@section Scripts{
+    <script>
+        var isBusy = false;
+        $(function(){
+            $('#articlesContainer').html("<div class='text-center'><i class='fa fa-hurricane fa-spin'></i></div>");
+            loadData();
+        });
+
+        function loadData(){
+            $.ajax({
+                type: 'GET',
+                url: '/api/articles',
+                dataType: 'json', 
+                contentType: 'application/json',
+                success: function (articles){
+                    //let articles = JSON.parse(data);
+                    var html = '';
+                    for (var i in articles){
+                        html += '<div><h4>Title: '+ articles[i].title + '</h4><div class="mb-3">Body: '+ articles[i].body +'</div></div>'
+                    }
+                    $('#articlesContainer').html(html);
+                },
+                error: function(data){
+                    console.log(data);
+                    alert('Ocurrió un error inesperado');
+                },
+            });
+        }
+
+    </script>
+}

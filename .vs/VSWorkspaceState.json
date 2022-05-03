@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Delegados",
-    "\\Delegados\\LambdaGeometria"
+    "\\LINQ",
+    "\\LINQ\\eShop"
   ],
-  "SelectedNode": "\\Delegados\\LambdaGeometria\\LambdaGeometria.csproj",
+  "SelectedNode": "\\LINQ\\eShop\\eShop.sln",
   "PreviewInSolutionExplorer": false
 }
