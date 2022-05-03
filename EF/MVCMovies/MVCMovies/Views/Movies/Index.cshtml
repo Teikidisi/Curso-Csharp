@@ -1,0 +1,88 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model MoviesViewModel
+
+<div class="d-flex align-items-end">
+    <h1 class="flex-grow-1">@ViewData["Title"]</h1>
+    <a asp-action="Create" class="btn btn-primary">Add Movie</a>
+</div>
+
+<form method="get" class="mb-3">
+    <div class="d-flex flex-row">
+        <div>
+            <label asp-for="Filters.SearchTitle">Search Title</label>
+            <input type="search" asp-for="Filters.SearchTitle" placeholder="Buscar" class="form-control" />
+        </div>
+        <div>
+            <label asp-for="Filters.SearchGenre">Search Genre</label>
+            <input asp-for="Filters.SearchGenre" placeholder="Buscar" class="form-control" />
+        </div>
+
+        <div class="ms-2">
+            <label asp-for="Filters.From">From DOB</label>
+            <input asp-for="Filters.From" placeholder="From" class="form-control" />
+        </div>
+        <div class="ms-2">
+            <label asp-for="Filters.To">To DOB</label>
+            <input asp-for="Filters.To" placeholder="To" class="form-control" />
+        </div>
+        @*<div>
+            <label asp-for="Filters.Rating">Search Ratings</label>
+            <input asp-for="Filters.Rating" placeholder="Buscar" class="form-control" />
+        </div>*@
+        <div class="ms-2">
+            <label asp-for="Filters.Rating">Rating</label>
+            <select asp-for="Filters.Rating" class="form-control">
+                @foreach(var rating in Enum.GetValues(typeof(Rating)))
+                {
+                    <option value = "@rating">@rating.ToString()</option>
+                }
+            </select>
+        </div>
+                <div class="ms-2">
+            <label asp-for="Filters.ActorID">Actor</label>
+            <select asp-for="Filters.ActorID" class="form-control">
+                @foreach(var actor in Model.Actors)
+                {
+                    <option value = "@actor.Id">@actor.Name.ToString()</option>
+                }
+            </select>
+        </div>
+        <div class="ms-2 mt-4">
+            <a asp-action="Index" class="btn btn-light">Clear</a>
+            <button type="submit" class="btn btn-secondary">Filter</button>
+        </div>
+    </div>
+</form>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Release Date</th>
+        <th>Price</th>
+        <th>Genre</th>
+        <th>Rating</th>
+        <th>Actors</th>
+        <th></th>
+        <th></th>
+    </tr>
+    @foreach(var movie in Model.Movies)
+    {
+        <tr>
+            <td>@movie.Id</td>
+            <td><a asp-action="Details" asp-route-id="@movie.Id">@movie.Title</a></td>
+            <td>@movie.ReleaseDate.ToShortDateString()</td>
+            <td>@movie.Price</td>
+            <td >@movie.Genre</td>
+            <td >@movie.Rating.ToString()</td>
+            <td>
+                <a href="/actors?movie=@movie.Id">@movie.Actors.Count()</a>
+            </td>
+            <td><a asp-action="Edit" asp-route-id="@movie.Id">Edit</a></td>
+            <td><a asp-action="Delete" asp-route-id="@movie.Id">Delete</a></td>
+        </tr>
+    }
+</table>

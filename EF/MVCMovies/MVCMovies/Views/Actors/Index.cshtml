@@ -1,0 +1,67 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model ActorsViewModel
+@{ViewData["Title"] = "Actors";} 
+
+<div class="d-flex align-items-end">
+    <h1 class="flex-grow-1">@ViewData["Title"]</h1>
+    <div>
+        <a asp-action="Create" class="btn btn-primary">Create</a>
+    </div>
+</div>
+
+<form method="get" class="mb-3">
+    <div class="d-flex flex-row">
+        <div>
+            <label asp-for="Filters.Search">Search</label>
+            <input type="search" asp-for="Filters.Search" placeholder="Buscar" class="form-control" />
+        </div>
+        <div class="ms-2">
+            <label asp-for="Filters.From">From DOB</label>
+            <input asp-for="Filters.From" placeholder="From" class="form-control" />
+        </div>
+        <div class="ms-2">
+            <label asp-for="Filters.To">To DOB</label>
+            <input asp-for="Filters.To" placeholder="To" class="form-control" />
+        </div>
+        <div class="ms-2">
+            <label asp-for="Filters.Sex">Sex</label>
+            <select asp-for="Filters.Sex" class="form-control">
+                @foreach(var sex in Enum.GetValues(typeof(Sex)))
+                {
+                    <option value = "@sex">@sex.ToString()</option>
+                }
+            </select>
+        </div>
+        <div class="ms-2 mt-4">
+            <a asp-action="Index" class="btn btn-light">Clear</a>
+            <button type="submit" class="btn btn-secondary">Filter</button>
+        </div>
+    </div>
+</form>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>DoB</th>
+        <th>Sex</th>
+        <th class="text-end">Oscars Won</th>
+        <th></th>
+        <th></th>
+    </tr>
+    @foreach(var actor in Model.Actors)
+    {
+        <tr>
+            <td>@actor.Id</td>
+            <td><a asp-page="/ActorDetails" asp-route-id="@actor.Id">@actor.Name</a></td>
+            <td>@actor.DateOfBirth.ToShortDateString()</td>
+            <td>@actor.Sex.ToString()</td>
+            <td class="text-end">@actor.OscarsWon</td>
+            <td><a asp-action="Edit" asp-route-id="@actor.Id">Editar</a></td>
+            <td><a asp-action="Delete" asp-route-id="@actor.Id">Borrar</a></td>
+        </tr>
+    }
+</table>

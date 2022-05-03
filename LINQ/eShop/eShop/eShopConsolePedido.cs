@@ -86,7 +86,7 @@ namespace eShop
                     Product productoOriginal = TestData.ProductList.FirstOrDefault(u => u.Id == compra.productosAComprar.Id);
                     if (productoOriginal != null)
                     {
-                        productoOriginal.Stock -= compra.Cantidad;
+                        productoOriginal.Stock -= compra.Cantidad;  
                         Console.WriteLine($"A {productoOriginal.Name} se le quitó {compra.Cantidad} y le quedan {productoOriginal.Stock} unidades");
                         var final = _productService.GetProduct(productoOriginal.Id);
                         Console.WriteLine(final.ToString());

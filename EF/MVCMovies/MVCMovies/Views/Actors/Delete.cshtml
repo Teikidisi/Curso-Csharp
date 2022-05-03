@@ -1,0 +1,41 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model Actor
+<h1>Delete Actor</h1>
+<form method="post" asp-action="Delete" asp-antiforgery="true">
+    <div asp-validation-summary="ModelOnly" class="text-danger" ></div>
+    <div class = "mb-3">
+        <label asp-for="Name">Name</label>
+        <input asp-for="Name" class="form-control" disabled="disabled" />
+        
+    </div>
+    <div class = "mb-3">
+        <label asp-for="DateOfBirth">Date of Birth</label>
+        <input asp-for="DateOfBirth" class = "form-control" disabled="disabled" />
+        
+    </div>
+    <div class = "mb-3">
+        <label asp-for="OscarsWon">Oscars Won</label>
+        <input asp-for="OscarsWon" class = "form-control" disabled="disabled" />
+        
+    </div>
+    <div class="mb-3">
+        <button type="submit" class="alert alert-danger btn btn-primary">DELETE</button>
+    </div>
+    @if (ViewData["Response"] != null)
+    {
+        <div class = "mb-3">
+            <div class="alert alert-success">
+                @ViewData["Response"]
+            </div>
+        </div>
+    }
+</form>
+
+@section Scripts{
+    @await Html.PartialAsync("_ValidationScriptsPartial");
+}

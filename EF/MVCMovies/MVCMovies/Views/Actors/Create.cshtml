@@ -1,0 +1,54 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model Actor
+<h1>Create Actor</h1>
+<form method="post" asp-action="Create" asp-antiforgery="true">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class = "mb-3">
+        <label asp-for="Name">Name</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class = "mb-3">
+        <label asp-for="DateOfBirth">Date of Birth</label>
+        <input asp-for="DateOfBirth" class = "form-control" />
+        <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+    </div>
+    <div class = "mb-3">
+        <label asp-for="OscarsWon">Oscars Won</label>
+        <input asp-for="OscarsWon" class = "form-control" />
+        <span asp-validation-for="OscarsWon" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Sex"></label>
+        @*<select asp-for="Sex" class="form-control">
+            @foreach(var sex in Enum.GetValues(typeof(Sex)))
+            {
+                <option value = "@sex">@sex.ToString()</option>
+            }
+        </select>*@
+        @foreach (var sex in Enum.GetValues(typeof(Sex)))
+        {
+            <input type="radio" asp-for="Sex" value="@sex" />@sex
+        }
+    </div>
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    @if (ViewData["Response"] != null)
+    {
+        <div class = "mb-3">
+            <div class="alert alert-success">
+                @ViewData["Response"]
+            </div>
+        </div>
+    }
+</form>
+
+@section Scripts{
+    @await Html.PartialAsync("_ValidationScriptsPartial");
+}
