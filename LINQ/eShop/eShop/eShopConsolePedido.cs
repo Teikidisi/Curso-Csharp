@@ -69,26 +69,32 @@ namespace eShop
         private void HacerPedido()
         {
             var carrito = _carritoService.GetCarrito();
+
             if (carrito.Count > 0)
             {
-                Console.WriteLine("Ordenado productos del carrito");
+                Console.WriteLine("Has ordenado los productos del carrito");
                 Pedido pedidoHecho = new Pedido(carrito);
-                Console.WriteLine($"Se hizo el pedido a las {pedidoHecho.FechaCompra} y se compró:");
+                Console.WriteLine($"\nSe hizo el pedido a las {pedidoHecho.FechaCompra} y se compró:");
                 foreach(var u in pedidoHecho.ProductosComprados)
                 {
                     Console.WriteLine($"{u.productosAComprar.Name} Cantidad:{u.Cantidad} Precio:{u.Precio}");
                 }
+
                 Console.WriteLine($"Costando un total de ${pedidoHecho.Total}");
-                _carritoService.EmptyCarrito();
                 foreach(Carrito compra in pedidoHecho.ProductosComprados)
                 {
                     Product productoOriginal = TestData.ProductList.FirstOrDefault(u => u.Id == compra.productosAComprar.Id);
                     if (productoOriginal != null)
                     {
-                        Console.WriteLine("Validando");
-                        Console.WriteLine($"{productoOriginal.Name} = {compra.productosAComprar.Name}");
+                        productoOriginal.Stock -= compra.Cantidad;
+                        Console.WriteLine($"A {productoOriginal.Name} se le quitó {compra.Cantidad} y le quedan {productoOriginal.Stock} unidades");
+                        var final = _productService.GetProduct(productoOriginal.Id);
+                        Console.WriteLine(final.ToString());
                     }
                 }
+
+                Console.WriteLine("\nVaciando el carrito...");
+                _carritoService.EmptyCarrito();
             }
             else
             {
