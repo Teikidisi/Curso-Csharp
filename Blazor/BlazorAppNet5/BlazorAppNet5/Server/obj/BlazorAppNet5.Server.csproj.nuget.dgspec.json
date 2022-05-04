@@ -1,0 +1,295 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Rodrigo\\source\\repos\\Teikidisi\\Curso-Csharp\\Blazor\\BlazorAppNet5\\BlazorAppNet5\\Server\\BlazorAppNet5.Server.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Rodrigo\\source\\repos\\Teikidisi\\Curso-Csharp\\Blazor\\BlazorAppNet5\\BlazorAppNet5\\Client\\BlazorAppNet5.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Rodrigo\\source\\repos\\Teikidisi\\Curso-Csharp\\Blazor\\BlazorAppNet5\\BlazorAppNet5\\Client\\BlazorAppNet5.Client.csproj",
+        "projectName": "BlazorAppNet5.Client",
+        "projectPath": "C:\\Users\\Rodrigo\\source\\repos\\Teikidisi\\Curso-Csharp\\Blazor\\BlazorAppNet5\\BlazorAppNet5\\Client\\BlazorAppNet5.Client.csproj",
+        "packagesPath": "C:\\Users\\Rodrigo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rodrigo\\source\\repos\\Teikidisi\\Curso-Csharp\\Blazor\\BlazorAppNet5\\BlazorAppNet5\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Rodrigo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Rodrigo\\source\\repos\\Teikidisi\\Curso-Csharp\\Blazor\\BlazorAppNet5\\BlazorAppNet5\\Shared\\BlazorAppNet5.Shared.csproj": {
+                "projectPath": "C:\\Users\\Rodrigo\\source\\repos\\Teikidisi\\Curso-Csharp\\Blazor\\BlazorAppNet5\\BlazorAppNet5\\Shared\\BlazorAppNet5.Shared.csproj"
+              },
+              "C:\\Users\\Rodrigo\\source\\repos\\Teikidisi\\Curso-Csharp\\Blazor\\BlazorAppNet5\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\Rodrigo\\source\\repos\\Teikidisi\\Curso-Csharp\\Blazor\\BlazorAppNet5\\Model\\Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[5.0.14, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.14, )"
+            },
+            "System.Net.Http.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.browser-wasm",
+              "version": "[5.0.16, 5.0.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\Rodrigo\\source\\repos\\Teikidisi\\Curso-Csharp\\Blazor\\BlazorAppNet5\\BlazorAppNet5\\Server\\BlazorAppNet5.Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Rodrigo\\source\\repos\\Teikidisi\\Curso-Csharp\\Blazor\\BlazorAppNet5\\BlazorAppNet5\\Server\\BlazorAppNet5.Server.csproj",
+        "projectName": "BlazorAppNet5.Server",
+        "projectPath": "C:\\Users\\Rodrigo\\source\\repos\\Teikidisi\\Curso-Csharp\\Blazor\\BlazorAppNet5\\BlazorAppNet5\\Server\\BlazorAppNet5.Server.csproj",
+        "packagesPath": "C:\\Users\\Rodrigo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rodrigo\\source\\repos\\Teikidisi\\Curso-Csharp\\Blazor\\BlazorAppNet5\\BlazorAppNet5\\Server\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Rodrigo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Rodrigo\\source\\repos\\Teikidisi\\Curso-Csharp\\Blazor\\BlazorAppNet5\\BlazorAppNet5\\Client\\BlazorAppNet5.Client.csproj": {
+                "projectPath": "C:\\Users\\Rodrigo\\source\\repos\\Teikidisi\\Curso-Csharp\\Blazor\\BlazorAppNet5\\BlazorAppNet5\\Client\\BlazorAppNet5.Client.csproj"
+              },
+              "C:\\Users\\Rodrigo\\source\\repos\\Teikidisi\\Curso-Csharp\\Blazor\\BlazorAppNet5\\BlazorAppNet5\\Shared\\BlazorAppNet5.Shared.csproj": {
+                "projectPath": "C:\\Users\\Rodrigo\\source\\repos\\Teikidisi\\Curso-Csharp\\Blazor\\BlazorAppNet5\\BlazorAppNet5\\Shared\\BlazorAppNet5.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+              "target": "Package",
+              "version": "[5.0.14, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.16, 5.0.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Rodrigo\\source\\repos\\Teikidisi\\Curso-Csharp\\Blazor\\BlazorAppNet5\\BlazorAppNet5\\Shared\\BlazorAppNet5.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Rodrigo\\source\\repos\\Teikidisi\\Curso-Csharp\\Blazor\\BlazorAppNet5\\BlazorAppNet5\\Shared\\BlazorAppNet5.Shared.csproj",
+        "projectName": "BlazorAppNet5.Shared",
+        "projectPath": "C:\\Users\\Rodrigo\\source\\repos\\Teikidisi\\Curso-Csharp\\Blazor\\BlazorAppNet5\\BlazorAppNet5\\Shared\\BlazorAppNet5.Shared.csproj",
+        "packagesPath": "C:\\Users\\Rodrigo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rodrigo\\source\\repos\\Teikidisi\\Curso-Csharp\\Blazor\\BlazorAppNet5\\BlazorAppNet5\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Rodrigo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Rodrigo\\source\\repos\\Teikidisi\\Curso-Csharp\\Blazor\\BlazorAppNet5\\Model\\Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Rodrigo\\source\\repos\\Teikidisi\\Curso-Csharp\\Blazor\\BlazorAppNet5\\Model\\Model.csproj",
+        "projectName": "Model",
+        "projectPath": "C:\\Users\\Rodrigo\\source\\repos\\Teikidisi\\Curso-Csharp\\Blazor\\BlazorAppNet5\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\Rodrigo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rodrigo\\source\\repos\\Teikidisi\\Curso-Csharp\\Blazor\\BlazorAppNet5\\Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Rodrigo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

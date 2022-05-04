@@ -1,0 +1,33 @@
+﻿@page "/"
+@using Model.Entities
+<MovieListComponent Movies="Movies">
+    <NullList>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921" />
+        <p>Loading.l..</p>
+    </NullList>
+    <EmptyList>
+        <p>There are no movies</p>
+    </EmptyList>
+</MovieListComponent>
+
+@code {
+    [Parameter]
+    public List<Movie>? Movies { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Movies = GetMovies();
+    }
+
+    private List<Movie> GetMovies()
+    {
+        //return new List<Movie>();
+        return new List<Movie>
+        {
+            new Movie { Title = "Spiderman: Homecoming", ReleaseDate = new DateTime(2015,6,28)},
+            new Movie { Title = "Spiderman: Far From Home", ReleaseDate = new DateTime(2018,6,28)},
+            new Movie { Title = "Spiderman: No Way Home", ReleaseDate = new DateTime(2021,6,28)},
+        };
+    }
+
+}
