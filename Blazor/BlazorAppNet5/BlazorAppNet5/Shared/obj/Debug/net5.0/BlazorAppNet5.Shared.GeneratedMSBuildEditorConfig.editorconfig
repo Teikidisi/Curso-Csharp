@@ -7,4 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows,browser
 build_property.RootNamespace = BlazorAppNet5.Shared
-build_property.ProjectDir = C:\Users\Rodrigo\Source\Repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Shared\
+build_property.ProjectDir = C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Shared\

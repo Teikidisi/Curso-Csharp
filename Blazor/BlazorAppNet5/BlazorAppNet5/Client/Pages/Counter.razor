@@ -1,16 +1,13 @@
 ﻿@page "/counter"
 
+
 <h1>Counter</h1>
 
 <p>Current count: @currentCount</p>
+<p>Singleton count: @singleton.Value</p>
+<p>Transient count: @transient.Value</p>
+@*singleton guardará su count aunque cambies de pagina, mientras que transient se resetea a 0 con cada cambio de pagina*@
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<button class="btn btn-primary" @onclick="IncrementCountFromJavascript">Count From Javascript</button>
 
-@code {
-    private int currentCount = 0;
-
-    private void IncrementCount()
-    {
-        currentCount++;
-    }
-}

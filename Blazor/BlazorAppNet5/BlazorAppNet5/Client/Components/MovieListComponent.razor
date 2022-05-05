@@ -1,0 +1,65 @@
+﻿@inject IJSRuntime js 
+@using Model.Entities
+
+<p>Nothing</p>
+
+<input type="checkbox" @bind="_show" />
+<div style="display: flex; flex-wrap: wrap; align-items: center;">
+    <GenericListComponent GenericList="Movies">
+        <ListAny Context="movie">
+            @*EL List component debe obtener el dato de genericList, ListAny como renderfragment es opcional*@
+            <MovieSingleComponent Movie="movie" ShowButton="_show" DeleteMovie="DeleteMovie" />
+            @*le pasas la lista de Movies a la list<Titem> GenericList. Context agarra el elemento individual de la lista movie, y se lo 
+              pasa a moviesingle porque moviesingle espera recibir una sola movie a la vez, en vez de un listado. Context nosotros definimos
+              el nombre del objeto, aunque puede ser lo que sea.
+              A moviesingle le pasas los datos que recibes del padre, es como en react. Puedes pasarle datos que espera recibir
+              porque está nested denro de genericlistcomponent, y está nesteado dentro de movielistcomponent*@
+        </ListAny>
+    </GenericListComponent>
+
+</div>
+
+
+
+
+@code{
+    [Parameter]
+    public List<Movie> Movies { get; set; }
+
+    private bool _show = false;
+
+    private async Task DeleteMovie(Movie movie)
+    {
+        bool confirm = await js.InvokeAsync<bool>("confirm",$"Do you want to remove the movie {movie.Title}");
+        if (confirm)
+        {
+            Movies.Remove(movie);
+            //Console.WriteLine($"Deleting Movie... {movie.Title}");s
+            await js.InvokeVoidAsync("console.log", $"Deleting movie {movie.Title}");
+        }
+    }
+
+    //protected override void OnInitialized() //Cuando se inicializa la pagina 
+    //{
+    //    Console.WriteLine($"OnInitialized - Movies count = {Movies.Count}");
+    //}
+
+    //protected override void OnParametersSet() //Cuando se setean parametros en la pagina
+    //{
+    //    Console.WriteLine($"OnParametersSet - Movies count = {Movies.Count}");
+    //}
+
+    //protected override void OnAfterRender(bool firstRender) //el bool marca si se renderizó por primera vez para ya no ejecutarse
+    //{
+    //    Console.WriteLine($"OnAfterRender - FirstRender = {firstRender}"); //cuando clicas el checkbox empieza a dar false porque vuelve a renderizar lo mismo
+    //}
+
+    //protected override bool ShouldRender() //muestra si se debe renderizar la pagina, si es  false nunca se va a renderizar
+    //                                       //no importa los cambios que se hagan
+    //{
+    //    Console.WriteLine("Should Render");
+    //    return base.ShouldRender();
+    //}
+
+    //puedes crear funciones custom para ejecutar cuando ocurran cosas en el render html
+}

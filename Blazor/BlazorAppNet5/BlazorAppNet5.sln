@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorAppNet5.Server", "BlazorAppNet5\Server\BlazorAppNet5.Server.csproj", "{04865668-1ED7-4240-8088-C81D0A3E217A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorAppNet5.Server", "BlazorAppNet5\Server\BlazorAppNet5.Server.csproj", "{04865668-1ED7-4240-8088-C81D0A3E217A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorAppNet5.Client", "BlazorAppNet5\Client\BlazorAppNet5.Client.csproj", "{C9A4FE30-C79A-4CA9-8773-EA4650454D2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorAppNet5.Client", "BlazorAppNet5\Client\BlazorAppNet5.Client.csproj", "{C9A4FE30-C79A-4CA9-8773-EA4650454D2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorAppNet5.Shared", "BlazorAppNet5\Shared\BlazorAppNet5.Shared.csproj", "{85F41CD7-1F08-409C-A5A3-A5AD548EB95A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorAppNet5.Shared", "BlazorAppNet5\Shared\BlazorAppNet5.Shared.csproj", "{85F41CD7-1F08-409C-A5A3-A5AD548EB95A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{1D462DF3-74CD-4C9A-8785-39B30908AC99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Model\Model.csproj", "{1D462DF3-74CD-4C9A-8785-39B30908AC99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

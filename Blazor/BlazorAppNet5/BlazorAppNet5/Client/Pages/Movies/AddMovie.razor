@@ -1,0 +1,27 @@
+﻿@page "/Movie/Add"
+@using Model.Entities
+@inject IMovieApi movieApi
+@*@inject NavigationManager navigationManager*@
+<h3>Add a new Movie</h3>
+
+<MovieAddEditForm Movie="Movie" OnValidSubmit="Add"></MovieAddEditForm>
+
+
+@code {
+    private MovieDTO Movie { get; set; } = new MovieDTO();
+    [Parameter]
+    public List<Movie> Movies { get; set; }
+
+    private void Add()
+    {
+        Console.WriteLine($"New Movie information: \nTitle: {Movie.Title} \nRelease Date: {Movie.ReleaseDate}");
+    //    Console.WriteLine(navigationManager.BaseUri);
+    //    Console.WriteLine(navigationManager.Uri);
+    //    navigationManager.NavigateTo("movie");
+
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        Movies = movieApi.GetMovies();
+    }
+}

@@ -13,7 +13,12 @@
     <SourceRoot Include="C:\Users\Rodrigo\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design\5.0.16\build\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design\5.0.16\build\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.props')" />
+  </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\Rodrigo\.nuget\packages\newtonsoft.json\10.0.1</PkgNewtonsoft_Json>
+    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\Rodrigo\.nuget\packages\microsoft.entityframeworkcore.tools\5.0.16</PkgMicrosoft_EntityFrameworkCore_Tools>
     <PkgMicrosoft_AspNetCore_Components_WebAssembly_Server Condition=" '$(PkgMicrosoft_AspNetCore_Components_WebAssembly_Server)' == '' ">C:\Users\Rodrigo\.nuget\packages\microsoft.aspnetcore.components.webassembly.server\5.0.14</PkgMicrosoft_AspNetCore_Components_WebAssembly_Server>
   </PropertyGroup>
 </Project>

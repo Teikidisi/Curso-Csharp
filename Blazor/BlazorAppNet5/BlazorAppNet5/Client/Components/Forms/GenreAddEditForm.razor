@@ -1,0 +1,25 @@
+﻿@using Model.Entities
+
+<EditForm Model="Genre" OnValidSubmit="OnValidSubmit">
+    <DataAnnotationsValidator></DataAnnotationsValidator>
+    <div class="form-group">
+        <label>Genre Name:</label>
+        <div>
+            <InputText class="form-control" @bind-Value="@Genre.Name"></InputText>
+            <ValidationMessage For="@(() => Genre.Name)" ></ValidationMessage>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-success">
+        <img src="https://www.mansarovar.com.co/app/PQRS/LibraryCSS/giphy.gif" style="width:20px; height:20px;" class="@(Loading ? "" : "d-none")" />
+        Add Genre
+    </button>
+</EditForm>
+@code {
+    [Parameter]
+    public GenreDTO Genre { get; set; } = new GenreDTO();
+    [Parameter]
+    public EventCallback OnValidSubmit { get; set; }
+    [Parameter]
+    public bool Loading { get; set; }
+}

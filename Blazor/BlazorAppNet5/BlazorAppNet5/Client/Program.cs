@@ -1,3 +1,5 @@
+using BlazorAppNet5.Client.Services.Abstractions;
+using BlazorAppNet5.Client.Services.Implementations;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,8 +20,18 @@ namespace BlazorAppNet5.Client
             builder.RootComponents.Add<App>("#app");
 
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+            
+            ConfigureServices(builder.Services);
 
             await builder.Build().RunAsync();
+        }
+
+        private static void ConfigureServices(IServiceCollection services)
+        {
+            services.AddSingleton<ServicesSingleton>();
+            services.AddTransient<ServicesTransient>();
+            services.AddScoped<IMovieApi, MovieApi>();
+            services.AddScoped<IGenreAPI, GenreAPI>();
         }
     }
 }

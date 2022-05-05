@@ -83,13 +83,42 @@ using BlazorAppNet5.Client.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\Pages\Index.razor"
+#line 11 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\_Imports.razor"
+using BlazorAppNet5.Client.Services.Abstractions;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\_Imports.razor"
+using BlazorAppNet5.Shared.DTO;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 13 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\_Imports.razor"
+using BlazorAppNet5.Client.Components;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 14 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\_Imports.razor"
+using BlazorAppNet5.Client.Components.Forms;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\Pages\Index.razor"
 using Model.Entities;
 
 #line default
 #line hidden
 #nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/index")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -98,31 +127,20 @@ using Model.Entities;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 13 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\Pages\Index.razor"
+#line 9 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\Pages\Index.razor"
        
     [Parameter]
-    public List<Movie>? Movies { get; set; }
+    public List<Movie> Movies { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
-        Movies = GetMovies();
+        Movies = movieApi.GetMovies();
     }
-
-    private List<Movie> GetMovies()
-    {
-        //return new List<Movie>();
-        return new List<Movie>
-        {
-            new Movie { Title = "Spiderman: Homecoming", ReleaseDate = new DateTime(2015,6,28)},
-            new Movie { Title = "Spiderman: Far From Home", ReleaseDate = new DateTime(2018,6,28)},
-            new Movie { Title = "Spiderman: No Way Home", ReleaseDate = new DateTime(2021,6,28)},
-        };
-    }
-
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IMovieApi movieApi { get; set; }
     }
 }
 #pragma warning restore 1591

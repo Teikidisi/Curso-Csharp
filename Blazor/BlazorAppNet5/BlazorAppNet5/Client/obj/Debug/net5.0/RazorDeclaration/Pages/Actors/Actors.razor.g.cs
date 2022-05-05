@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace BlazorAppNet5.Client.Shared
+namespace BlazorAppNet5.Client.Pages.Actors
 {
     #line hidden
     using System;
@@ -83,39 +83,41 @@ using BlazorAppNet5.Client.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\Shared\MovieListComponent.razor"
-using Model.Entities;
+#line 11 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\_Imports.razor"
+using BlazorAppNet5.Client.Services.Abstractions;
 
 #line default
 #line hidden
 #nullable disable
-    public partial class MovieListComponent : Microsoft.AspNetCore.Components.ComponentBase
+#nullable restore
+#line 12 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\_Imports.razor"
+using BlazorAppNet5.Shared.DTO;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 13 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\_Imports.razor"
+using BlazorAppNet5.Client.Components;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 14 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\_Imports.razor"
+using BlazorAppNet5.Client.Components.Forms;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/Actors")]
+    public partial class Actors : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 26 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\Shared\MovieListComponent.razor"
-      
-    [Parameter]
-    public List<Movie> Movies { get; set; }
-    [Parameter]
-    public RenderFragment EmptyList { get; set; }
-    [Parameter]
-    public RenderFragment NullList { get; set; } //obligatorio que el nombre sea childcontent al usar renderfragment
-
-    private bool _show = false;
-
-    private void DeleteMovie(Movie movie)
-    {
-        Console.WriteLine($"Deleting Movie... {movie.Title}");
-    }
-
-#line default
-#line hidden
-#nullable disable
     }
 }
 #pragma warning restore 1591

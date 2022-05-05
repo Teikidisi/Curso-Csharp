@@ -10,4 +10,4 @@ build_property.EnableSingleFileAnalyzer =
 build_property.EnableTrimAnalyzer = true
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = BlazorAppNet5.Client
-build_property.ProjectDir = C:\Users\Rodrigo\Source\Repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\
+build_property.ProjectDir = C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\

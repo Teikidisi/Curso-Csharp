@@ -1,0 +1,28 @@
+﻿@using Model.Entities
+
+<EditForm Model="Movie" OnValidSubmit="OnValidSubmit">
+    <DataAnnotationsValidator></DataAnnotationsValidator>
+    <div class="form-group">
+        <label>Title:</label>
+        <div>
+            <InputText class="form-control" @bind-Value="@Movie.Title"></InputText>
+            <ValidationMessage For="@(() => Movie.Title)" ></ValidationMessage>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Release Date:</label>
+        <div>
+            <InputDate class="form-control" @bind-Value="@Movie.ReleaseDate"></InputDate>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-success">Save Movie</button>
+</EditForm>
+
+@code {
+    [Parameter]
+    public MovieDTO  Movie { get; set; }
+    [Parameter]
+    public EventCallback OnValidSubmit { get; set; }
+}

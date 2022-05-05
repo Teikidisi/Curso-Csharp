@@ -1,0 +1,18 @@
+﻿@page "/Genre/Edit/{id:int}"
+@using Model.Entities
+<h3>Edit Gender</h3>
+
+<GenreAddEditForm OnValidSubmit="Edit" Genre="Genre"></GenreAddEditForm>
+
+
+@code {
+
+    public int Id { get; set; }
+    private GenreDTO Genre { get; set; } = new GenreDTO();
+
+    private void Edit()
+    {
+        Console.WriteLine($"Genre edited");
+
+    }
+}

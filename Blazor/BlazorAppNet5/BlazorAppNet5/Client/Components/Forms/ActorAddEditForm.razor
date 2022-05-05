@@ -1,0 +1,41 @@
+﻿@using Model.Entities
+
+<EditForm Model="Actor" OnValidSubmit="OnValidSubmit">
+    <DataAnnotationsValidator></DataAnnotationsValidator>
+    <div class="form-group">
+        <label>First Name:</label>
+        <div>
+            <InputText class="form-control" @bind-Value="@Actor.FirstName"></InputText>
+            <ValidationMessage For="@(() => Actor.FirstName)" ></ValidationMessage>
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Last Name:</label>
+        <div>
+            <InputText class="form-control" @bind-Value="@Actor.LastName"></InputText>
+            <ValidationMessage For="@(() => Actor.LastName)" ></ValidationMessage>
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Date of Birth:</label>
+        <div>
+            <InputDate class="form-control" @bind-Value="@Actor.DateOfBirth"></InputDate>
+        </div>
+    </div>
+        <div class="form-group">
+        <label>Years Active:</label>
+        <div>
+            <InputNumber class="form-control" @bind-Value="@Actor.YearsActive"></InputNumber>
+        </div>
+    </div>
+
+
+    <button type="submit" class="btn btn-success">Save New Actor</button>
+</EditForm>
+
+@code {
+    [Parameter]
+    public ActorDTO Actor { get; set; }
+    [Parameter]
+    public EventCallback OnValidSubmit { get; set; }
+}

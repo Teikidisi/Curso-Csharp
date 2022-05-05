@@ -1,0 +1,18 @@
+﻿@page "/Actor/Add"
+@using Model.Entities
+
+<h3>Add Actor</h3>
+
+<ActorAddEditForm Actor="Actor" OnValidSubmit="Add"></ActorAddEditForm>
+
+
+@code {
+    private ActorDTO Actor { get; set; } = new ActorDTO();
+
+    private void Add()
+    {
+        Console.WriteLine($"New Actor added {Actor.FirstName} {Actor.LastName} {Actor.DateOfBirth}");
+
+
+    }
+}
