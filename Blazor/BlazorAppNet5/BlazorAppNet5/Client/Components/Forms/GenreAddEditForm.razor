@@ -1,7 +1,9 @@
-﻿@using Model.Entities
+﻿
+@using Model.Entities
+
 
 <EditForm Model="Genre" OnValidSubmit="OnValidSubmit">
-    <DataAnnotationsValidator></DataAnnotationsValidator>
+    <FluentValidationValidator />
     <div class="form-group">
         <label>Genre Name:</label>
         <div>
@@ -12,7 +14,7 @@
 
     <button type="submit" class="btn btn-success">
         <img src="https://www.mansarovar.com.co/app/PQRS/LibraryCSS/giphy.gif" style="width:20px; height:20px;" class="@(Loading ? "" : "d-none")" />
-        Add Genre
+        Save
     </button>
 </EditForm>
 @code {

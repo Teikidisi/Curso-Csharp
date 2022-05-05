@@ -7,6 +7,8 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "Blazored.FluentValidation.dll": "sha256-Yd+TgjggnGAP41alBqq4QQNW1P2sDk9W0RytHV+VFw8=",
+      "FluentValidation.dll": "sha256-ICZwzUI5uclncCyLXRZWnt4YD5C\/Dgw\/TPJFuvg8HSs=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-MtirMvHgYcj4ndQd7pET\/O5NNYtgGBSZjagQtMoCqkM=",
       "Microsoft.AspNetCore.Components.dll": "sha256-GAaJclD+6g1DqVk0QYR\/AwnPRfqna8jIick0Qzgxgmk=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-ItzErl0dg6wjmJUfDfQ9ZhyauugC8Dy+oc2CA9DDkZ4=",
@@ -195,17 +197,17 @@
       "mscorlib.dll": "sha256-RvlJgNNOrNqPypkseRqbe69kNd7hnKW0u6Bmt1305d4=",
       "netstandard.dll": "sha256-Ttq9E+RchoLMvC6pS8ktXuaz1r51vG7wSm1emPBPRrk=",
       "System.Private.CoreLib.dll": "sha256-7y7hjQvy9SAXBmGIcqlrFwPQioCDSax5WwjUDJYfRAk=",
-      "BlazorAppNet5.Shared.dll": "sha256-BSQi8it7FQe9NTnJTXL7XcuVfyecgP8+mdkAe5\/v0VM=",
-      "Model.dll": "sha256-XJPGKpBSkWofI4t3kvg3NznpIh58YDAuy2+H1lo8IZE=",
-      "BlazorAppNet5.Client.dll": "sha256-iaUrIJtAAE350IExf\/xeYhCJwPUYFJLXK8LdTefxh0k="
+      "BlazorAppNet5.Shared.dll": "sha256-EGmZbvWh7RNIpJ2iV9gMbWvKfVYRrfPcKx\/CbHssBWc=",
+      "Model.dll": "sha256-\/PtJHSYaoRFpuj1BXhcFq6\/d9thQfHnls4MGs374rN4=",
+      "BlazorAppNet5.Client.dll": "sha256-sFjFgEXHB2Uool82SQAx\/ozoVzS3yX5SbLP0LQvTe3M="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Model.pdb": "sha256-WvU9TQXSAzD\/NUEkWSHsUMONfKh74otiDJwdm4rTAtQ=",
-      "BlazorAppNet5.Shared.pdb": "sha256-9lC1jm72st+4Zrfsu6gMr+IsQVMXvg8wWJ\/RNYu9dLE=",
-      "BlazorAppNet5.Client.pdb": "sha256-KCVxlFr78TVubCvl\/reFx5v\/6KHqQjRMA6WcxY1UY4I="
+      "Model.pdb": "sha256-Ys0pS+77TTX4EFcNG5tb9\/ppBIxjj1+VsrGRAthQKYk=",
+      "BlazorAppNet5.Shared.pdb": "sha256-sKt2WpMc5Cs0FA8+If1SKnEDsUj+Vpgc+UlqvlQegus=",
+      "BlazorAppNet5.Client.pdb": "sha256-7K1VsKCDTGPqmLktFqn0lYana5MepNcYYBHEwmA9WIE="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-jWuZI+z9wt0OfCMj+W5wh3HN+Ye6efC6YfCUWbBHBa8=",

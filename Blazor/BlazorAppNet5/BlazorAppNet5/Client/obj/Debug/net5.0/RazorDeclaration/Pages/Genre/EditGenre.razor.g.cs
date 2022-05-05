@@ -111,7 +111,14 @@ using BlazorAppNet5.Client.Components.Forms;
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\Pages\Genre\EditGenre.razor"
+#line 15 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\_Imports.razor"
+using Blazored.FluentValidation;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\Pages\Genre\EditGenre.razor"
 using Model.Entities;
 
 #line default
@@ -126,21 +133,41 @@ using Model.Entities;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 8 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\Pages\Genre\EditGenre.razor"
+#line 13 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\Pages\Genre\EditGenre.razor"
        
-
+    [Parameter]
     public int Id { get; set; }
-    private GenreDTO Genre { get; set; } = new GenreDTO();
+    private GenreDTO model = new GenreDTO();
+    private bool _loading = false;
+    private bool _showError = false;
 
-    private void Edit()
+    protected override async Task OnInitializedAsync()
     {
-        Console.WriteLine($"Genre edited");
+        model = await genreAPI.GetById(Id);
+    }
 
+    private async Task Edit()
+    {
+        _loading = true;
+        var result = await genreAPI.Update(model);
+
+        if (result is null)
+        {
+            navigationManager.NavigateTo("genres");
+        }
+        else
+        {
+            _showError = true;
+            Console.WriteLine(result);
+        }
+        _loading = false;
     }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager navigationManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IGenreAPI genreAPI { get; set; }
     }
 }
 #pragma warning restore 1591

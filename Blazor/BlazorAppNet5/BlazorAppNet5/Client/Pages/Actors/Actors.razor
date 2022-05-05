@@ -1,14 +1,62 @@
 ﻿@page "/Actors"
+@inject IActorAPI actorAPI
 
-<div>
+<div class="mb-4">
     <a href="/Actor/Add" class="btn btn-info">Add Actor</a>
 </div>
 
 
-<div>
-    <a href="/Actor/Edit" class="btn btn-info">Edit Actor</a>
-</div>
+@if (_loading)
+{
+    <img src="https://www.mansarovar.com.co/app/PQRS/LibraryCSS/giphy.gif" style="width: 20px; height: 20px;" />
+    <span>Loading...</span>
+}
+else
+{
+    @if (actors.Any())
+    {
+        <div class="d-flex flex-row flex-wrap m-2">
+            @foreach(var item in actors)
+            {
+                <div class="container-sm border border-1 bd-light" style="max-width: 700px; ">
+                    <div class="d-flex flex-row m-4 justify-content-evenly align-items-center">
+                        <img src="@item.Image" style="width:auto; height:125px;" class="mr-4" />
+                        <div class="d-flex flex-column ml-5">
+                            <div class="d-flex flex-row justify-content-center">
+                                <p class="text-muted mr-2">Name: <span class="mr-1 text-dark">@item.FirstName</span><span class="text-dark">@item.LastName</span></p>
+                                <p class="text-muted mr-2">Date of Birth: <span class="text-dark">@item.DateOfBirth.ToShortDateString()</span></p>
+                                <p class="text-muted mr-2">Years Active: <span class="text-dark">@item.YearsActive</span></p>
+                            </div>
+                            <p class="text-muted mr-2"><span class="text-dark">@item.Description</span></p>
+                        </div>
+
+                    </div>
+                    
+                    <div class="m-4">
+                        <a href="@($"/Actor/Edit/{@item.Id}")" type="button" class="btn btn-info" style="width:55px; height:35px;">Edit Actor</a>
+                    </div>
+                </div>
+               
+            }
+        </div>
+    }
+    else
+    {
+        <div>
+            <p>There are no actors in the Database</p>
+        </div>
+    }
+}
 
 @code {
+    List<ActorDTO> actors = new List<ActorDTO>();
+    private bool _loading = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _loading = true;
+        actors = await actorAPI.GetAll();
+        _loading = false;
+    }
 
 }

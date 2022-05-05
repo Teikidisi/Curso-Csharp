@@ -110,6 +110,13 @@ using BlazorAppNet5.Client.Components.Forms;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 15 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\_Imports.razor"
+using Blazored.FluentValidation;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/Genres")]
     public partial class Genres : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -118,6 +125,25 @@ using BlazorAppNet5.Client.Components.Forms;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 40 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\Pages\Genre\Genres.razor"
+       
+    private List<GenreDTO> model = new List<GenreDTO>();
+    private bool _loading = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _loading = true;
+
+        model = await genreAPI.GetAll();
+        
+        _loading = false;
+    } 
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IGenreAPI genreAPI { get; set; }
     }
 }
 #pragma warning restore 1591

@@ -1,7 +1,7 @@
 ﻿@using Model.Entities
 
 <EditForm Model="Actor" OnValidSubmit="OnValidSubmit">
-    <DataAnnotationsValidator></DataAnnotationsValidator>
+    <FluentValidationValidator />
     <div class="form-group">
         <label>First Name:</label>
         <div>
@@ -22,15 +22,29 @@
             <InputDate class="form-control" @bind-Value="@Actor.DateOfBirth"></InputDate>
         </div>
     </div>
-        <div class="form-group">
+    <div class="form-group">
         <label>Years Active:</label>
         <div>
             <InputNumber class="form-control" @bind-Value="@Actor.YearsActive"></InputNumber>
         </div>
     </div>
+    <div class="form-group">
+        <label>Description:</label>
+        <div>
+            <InputTextArea class="form-control" @bind-Value="@Actor.Description"></InputTextArea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Upload Actor Image</label>
+        <div>
+            <InputText class="form-control" @bind-Value="@Actor.Image"></InputText>
+        </div>
+    </div>
 
 
-    <button type="submit" class="btn btn-success">Save New Actor</button>
+
+    <button type="submit" class="btn btn-success">
+        <img  class="@(Loading ? "" : "d-none")"/><span>Save</span></button>
 </EditForm>
 
 @code {
@@ -38,4 +52,6 @@
     public ActorDTO Actor { get; set; }
     [Parameter]
     public EventCallback OnValidSubmit { get; set; }
+    [Parameter]
+    public bool Loading { get; set; }
 }

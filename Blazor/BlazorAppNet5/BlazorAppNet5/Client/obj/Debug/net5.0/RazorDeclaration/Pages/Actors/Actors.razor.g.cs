@@ -110,6 +110,13 @@ using BlazorAppNet5.Client.Components.Forms;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 15 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\_Imports.razor"
+using Blazored.FluentValidation;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/Actors")]
     public partial class Actors : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -118,6 +125,24 @@ using BlazorAppNet5.Client.Components.Forms;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 51 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\Pages\Actors\Actors.razor"
+       
+    List<ActorDTO> actors = new List<ActorDTO>();
+    private bool _loading = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _loading = true;
+        actors = await actorAPI.GetAll();
+        _loading = false;
+    }
+
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IActorAPI actorAPI { get; set; }
     }
 }
 #pragma warning restore 1591

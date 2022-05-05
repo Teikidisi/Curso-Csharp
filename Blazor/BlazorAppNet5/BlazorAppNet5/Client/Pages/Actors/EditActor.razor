@@ -1,16 +1,48 @@
 ﻿@page "/Actor/Edit/{id:int}"
+@inject IActorAPI actorAPI
+@inject NavigationManager navigationManager
 @using Model.Entities
+
 <h3>Edit Actor</h3>
 
-<ActorAddEditForm Actor="Actor" OnValidSubmit="Edit"></ActorAddEditForm>
-
+<ActorAddEditForm Actor="actor" OnValidSubmit="Edit" Loading="_loading"></ActorAddEditForm>
+@if (_showError)
+{
+    <p style="color: red;">The request could not be processed</p>
+}
 
 @code {
+    [Parameter]
     public int Id { get; set; }
-    private ActorDTO Actor { get; set; } = new ActorDTO();
+    private bool _loading = false;
+    private bool _showError = false;
 
-    private void Edit()
+    private ActorDTO actor { get; set; } = new ActorDTO();
+
+    protected override async Task OnInitializedAsync()
     {
-        Console.WriteLine($"Actor params edited");
+        actor = await actorAPI.GetById(Id);
+        if (actor == null)
+        {
+
+        }
+    }
+
+
+    private async void Edit()
+    {
+        _loading = true;
+        var result = await actorAPI.Update(actor);
+
+        if (result is null)
+        {
+            navigationManager.NavigateTo("Actors");
+        }
+        else
+        {
+            _showError = true;
+            Console.WriteLine(result);
+        }
+        _loading = false;
     }
 }

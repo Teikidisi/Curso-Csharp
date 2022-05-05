@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FluentValidation;
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace BlazorAppNet5.Shared.DTO

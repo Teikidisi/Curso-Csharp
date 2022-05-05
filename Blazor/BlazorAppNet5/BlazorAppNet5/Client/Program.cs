@@ -32,6 +32,7 @@ namespace BlazorAppNet5.Client
             services.AddTransient<ServicesTransient>();
             services.AddScoped<IMovieApi, MovieApi>();
             services.AddScoped<IGenreAPI, GenreAPI>();
+            services.AddScoped<IActorAPI, ActorAPI>();
         }
     }
 }

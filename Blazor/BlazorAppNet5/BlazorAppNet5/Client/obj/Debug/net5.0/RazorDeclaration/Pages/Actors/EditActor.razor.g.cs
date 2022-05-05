@@ -111,7 +111,14 @@ using BlazorAppNet5.Client.Components.Forms;
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\Pages\Actors\EditActor.razor"
+#line 15 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\_Imports.razor"
+using Blazored.FluentValidation;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\Pages\Actors\EditActor.razor"
 using Model.Entities;
 
 #line default
@@ -126,19 +133,47 @@ using Model.Entities;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 8 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\Pages\Actors\EditActor.razor"
+#line 14 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\Pages\Actors\EditActor.razor"
        
+    [Parameter]
     public int Id { get; set; }
-    private ActorDTO Actor { get; set; } = new ActorDTO();
+    private bool _loading = false;
+    private bool _showError = false;
 
-    private void Edit()
+    private ActorDTO actor { get; set; } = new ActorDTO();
+
+    protected override async Task OnInitializedAsync()
     {
-        Console.WriteLine($"Actor params edited");
+        actor = await actorAPI.GetById(Id);
+        if (actor == null)
+        {
+
+        }
+    }
+
+
+    private async void Edit()
+    {
+        _loading = true;
+        var result = await actorAPI.Update(actor);
+
+        if (result is null)
+        {
+            navigationManager.NavigateTo("Actors");
+        }
+        else
+        {
+            _showError = true;
+            Console.WriteLine(result);
+        }
+        _loading = false;
     }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager navigationManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IActorAPI actorAPI { get; set; }
     }
 }
 #pragma warning restore 1591

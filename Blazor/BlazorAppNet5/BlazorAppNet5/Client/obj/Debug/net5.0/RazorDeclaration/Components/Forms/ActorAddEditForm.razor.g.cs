@@ -111,6 +111,13 @@ using BlazorAppNet5.Client.Components.Forms;
 #line hidden
 #nullable disable
 #nullable restore
+#line 15 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\_Imports.razor"
+using Blazored.FluentValidation;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\Components\Forms\ActorAddEditForm.razor"
 using Model.Entities;
 
@@ -125,12 +132,14 @@ using Model.Entities;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 36 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\Components\Forms\ActorAddEditForm.razor"
+#line 50 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\Components\Forms\ActorAddEditForm.razor"
        
     [Parameter]
     public ActorDTO Actor { get; set; }
     [Parameter]
     public EventCallback OnValidSubmit { get; set; }
+    [Parameter]
+    public bool Loading { get; set; }
 
 #line default
 #line hidden

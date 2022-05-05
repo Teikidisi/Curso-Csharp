@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8MBMZKKuQGJrdbaPIvSlgwxz5LHFkeCFetBV6gvBb7yMWq66A4Fo7fBUEMCAO8FGalqYxKNOH4pGk5BkLKq4Vg==",
+  "dgSpecHash": "SyCnC6BWTKPMHZfmpT2zViBxcEGKHd187WsTdc1ezD5Oo5k82pT3Yif1DyzREkNEV6cxcEC7PYTQxkNfJOidSw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Rodrigo\\source\\repos\\Teikidisi\\Curso-Csharp\\Blazor\\BlazorAppNet5\\BlazorAppNet5\\Shared\\BlazorAppNet5.Shared.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Rodrigo\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512"
+  ],
   "logs": []
 }

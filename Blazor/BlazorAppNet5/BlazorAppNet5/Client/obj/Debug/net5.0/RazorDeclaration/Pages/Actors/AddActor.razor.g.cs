@@ -111,6 +111,13 @@ using BlazorAppNet5.Client.Components.Forms;
 #line hidden
 #nullable disable
 #nullable restore
+#line 15 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\_Imports.razor"
+using Blazored.FluentValidation;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 2 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\Pages\Actors\AddActor.razor"
 using Model.Entities;
 
@@ -126,20 +133,35 @@ using Model.Entities;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 9 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\Pages\Actors\AddActor.razor"
+#line 16 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\Pages\Actors\AddActor.razor"
        
     private ActorDTO Actor { get; set; } = new ActorDTO();
+    private bool _loading = false;
+    private bool _showError = false;
 
-    private void Add()
+    private async Task Add()
     {
-        Console.WriteLine($"New Actor added {Actor.FirstName} {Actor.LastName} {Actor.DateOfBirth}");
+        _loading = true;
+        var result = await actorAPI.Add(Actor);
 
+        if (result == null)
+        {
+            navigationManager.NavigateTo("Actors");
+        }
+        else
+        {
+            _showError = true;
+            Console.WriteLine(result);
+        }
 
+        _loading = false;
     }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager navigationManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IActorAPI actorAPI { get; set; }
     }
 }
 #pragma warning restore 1591

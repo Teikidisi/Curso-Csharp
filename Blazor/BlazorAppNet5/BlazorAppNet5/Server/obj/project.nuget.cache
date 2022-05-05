@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "4c6PNN0o5PW7abYXmb2XFFMgTgc2UJSgSr3XrZZ3EF+3T/8JwqBDAkuOdzbbKbeuEcfc5D/nKWiD74ols9YhRw==",
+  "dgSpecHash": "b7rk/QuRHstnrYjhMngBdiwQMxf/MzwADd3z4/0Sx/0ZTmudQLD69P0J8xlKwlY9OoileuFX+DeBgLvTCoz9fg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Rodrigo\\source\\repos\\Teikidisi\\Curso-Csharp\\Blazor\\BlazorAppNet5\\BlazorAppNet5\\Server\\BlazorAppNet5.Server.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Rodrigo\\.nuget\\packages\\blazored.fluentvalidation\\2.0.3\\blazored.fluentvalidation.2.0.3.nupkg.sha512",
+    "C:\\Users\\Rodrigo\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.14\\microsoft.aspnetcore.authorization.5.0.14.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\microsoft.aspnetcore.components\\5.0.14\\microsoft.aspnetcore.components.5.0.14.nupkg.sha512",

@@ -110,6 +110,13 @@ using BlazorAppNet5.Client.Components.Forms;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 15 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\_Imports.razor"
+using Blazored.FluentValidation;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/Movie")]
     public partial class ExpandMovie : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -119,7 +126,7 @@ using BlazorAppNet5.Client.Components.Forms;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 6 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\Pages\Movies\ExpandMovie.razor"
+#line 12 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\Pages\Movies\ExpandMovie.razor"
        
     [Parameter]
     public int Id { get; set; }

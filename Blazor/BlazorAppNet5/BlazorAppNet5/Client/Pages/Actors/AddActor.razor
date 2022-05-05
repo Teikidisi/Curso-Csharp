@@ -1,18 +1,38 @@
 ﻿@page "/Actor/Add"
 @using Model.Entities
+@inject IActorAPI actorAPI
+@inject NavigationManager navigationManager
 
 <h3>Add Actor</h3>
 
-<ActorAddEditForm Actor="Actor" OnValidSubmit="Add"></ActorAddEditForm>
+<ActorAddEditForm Actor="Actor" OnValidSubmit="Add" Loading="_loading"></ActorAddEditForm>
+
+@if (_showError)
+{
+    <p style="color: red;">The request could not be processed</p>
+}
 
 
 @code {
     private ActorDTO Actor { get; set; } = new ActorDTO();
+    private bool _loading = false;
+    private bool _showError = false;
 
-    private void Add()
+    private async Task Add()
     {
-        Console.WriteLine($"New Actor added {Actor.FirstName} {Actor.LastName} {Actor.DateOfBirth}");
+        _loading = true;
+        var result = await actorAPI.Add(Actor);
 
+        if (result == null)
+        {
+            navigationManager.NavigateTo("Actors");
+        }
+        else
+        {
+            _showError = true;
+            Console.WriteLine(result);
+        }
 
+        _loading = false;
     }
 }

@@ -111,7 +111,14 @@ using BlazorAppNet5.Client.Components.Forms;
 #line hidden
 #nullable disable
 #nullable restore
-#line 1 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\Components\Forms\GenreAddEditForm.razor"
+#line 15 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\_Imports.razor"
+using Blazored.FluentValidation;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\Components\Forms\GenreAddEditForm.razor"
 using Model.Entities;
 
 #line default
@@ -125,7 +132,7 @@ using Model.Entities;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 18 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\Components\Forms\GenreAddEditForm.razor"
+#line 20 "C:\Users\Rodrigo\source\repos\Teikidisi\Curso-Csharp\Blazor\BlazorAppNet5\BlazorAppNet5\Client\Components\Forms\GenreAddEditForm.razor"
        
     [Parameter]
     public GenreDTO Genre { get; set; } = new GenreDTO();
